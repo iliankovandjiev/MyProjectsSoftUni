@@ -1,6 +1,10 @@
+def positive(number):
+    for num in number:
+        if num[:] == num[::-1]:
+            print("True")
+        else:
+            print("False")
+
+
 list_of_positive_integers = input().split(", ")
-for num in list_of_positive_integers:
-    if num[:] == num[::-1]:
-        print(True)
-    else:
-        print(False)
+positive(list_of_positive_integers)
