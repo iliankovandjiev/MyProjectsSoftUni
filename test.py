@@ -1,8 +1,4 @@
-string = input()
-list_index = []
 
-for i in range(len(string)):
-    if string[i].isupper():
-        list_index.extend(i)
-
-print(list_index)
+lst_input = [-1, -3, -5, -2, -7]
+new_list = sorted(lst_input, reverse=True)
+print(new_list)
