@@ -9,7 +9,7 @@ while True:
     if command_one == 'Shoot':
         index = int(index)
         value = int(value)
-        if index < len(final_integer):
+        if 0 <= index < len(final_integer):
             final_integer[index] -= value
             if final_integer[index] <= 0:
                 final_integer.pop(index)
@@ -17,7 +17,7 @@ while True:
     elif command_one == 'Add':
         index = int(index)
         value = int(value)
-        if index < len(final_integer):
+        if 0 <= index < len(final_integer):
             final_integer.insert(index, value)
         else:
             print("Invalid placement!")
