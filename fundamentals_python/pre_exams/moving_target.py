@@ -24,7 +24,8 @@ while True:
     elif command_one == 'Strike':
         index = int(index)
         value = int(value)
-        if index in range(len(final_integer)) and (index - value) in range(len(final_integer)) and (index + value) in range(len(final_integer)):
+        if index in range(len(final_integer)) and (index - value) in range(len(final_integer)) and (
+                index + value) in range(len(final_integer)):
             if (value * 2 + 1) < len(final_integer):
                 for num in range((index - value), (index + value + 1)):
                     final_integer.pop((index - value))
