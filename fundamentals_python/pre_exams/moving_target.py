@@ -28,8 +28,6 @@ while True:
             if (value * 2 + 1) < len(final_integer):
                 for num in range((index - value), (index + value + 1)):
                     final_integer.pop((index - value))
-            else:
-                pass
         else:
             print("Strike missed!")
 print("|".join([str(num) for num in final_integer]))
