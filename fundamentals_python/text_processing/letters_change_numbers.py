@@ -1,0 +1,1 @@
+sequence_of_strings = input().split()
